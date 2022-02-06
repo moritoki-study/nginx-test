@@ -1,0 +1,11 @@
+version: '3.5'
+services:
+
+  webserver:
+    image: nginx-test:latest
+    container_name: nginx
+    hostname: nginx
+    ports:
+      - 80:80
+    user: root
+    restart: always
